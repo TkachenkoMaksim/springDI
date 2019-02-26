@@ -6,8 +6,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class App {
     public static void main(String[] args) {
-
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        
         EmployeeInput employeeInput = (EmployeeInput) context.getBean("employeeService");
         System.out.println(employeeInput.getAll());
 
